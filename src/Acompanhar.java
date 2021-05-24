@@ -9,13 +9,13 @@ public class Acompanhar extends FinalizarCompra{
 	protected Date estimativaEntrega;
 	
 	public String contatarEntregador(String dadosEntregador) {
-		//integração com chamada do celular e envio de mensagem via aplicativos terceiros
-		
+		//integraÃ§Ã£o com chamada do celular e envio de mensagem via aplicativos terceiros
+		this.dadosEntregador = dadosEntregador;
 		return dadosEntregador;
 	}
 	
 	void map() {
-		//integração com API de mapa
+		//integraÃ§Ã£o com API de mapa
 	}
 	
 }
