@@ -27,6 +27,14 @@ public class Conta extends Endereco{
 			String endereco,
 			double idUsuario) {
 		
+		this.nome = nome;
+		this.email = email;
+		this.telefone = telefone;
+		this.senha = senha;
+		this.cep = cep;
+		this.endereco = endereco;
+		this.idUsuario = idUsuario;
+		
 		Random random = new Random();
 		
 		System.out.println("Digite seu nome:");
@@ -62,6 +70,13 @@ public class Conta extends Endereco{
 			String endereco,
 			String idUsuario) {
 		
+		this.nome = nome;
+		this.email = email;
+		this.telefone = telefone;
+		this.senha = senha;
+		this.cep = cep;
+		this.endereco = endereco;
+		this.idUsuario = idUsuario;
 		
 		System.out.println("Digite seu nome:");
 			nome = scanner.nextLine();
@@ -89,11 +104,16 @@ public class Conta extends Endereco{
 	}
 	
 	public boolean validaCep(String cep) {
-		//Valida o cep junto à API dos correios
+		//Valida o cep junto Ã  API dos correios
+		this.cep = cep;
+		
 		return true;
 	}
 	
 	public boolean validaSenha(String senha, String resenha) {
+		
+		this.senha = senha;
+		
 		if (senha == resenha) {
 			return true;
 		}else {
@@ -103,6 +123,7 @@ public class Conta extends Endereco{
 	
 	public String buscaCep(String logradouro, String estado) {
 		//consulta de cep no correios
+		this.cep = cep;
 		
 		return cep;
 	}
