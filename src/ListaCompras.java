@@ -17,6 +17,10 @@ public class ListaCompras extends Mercado{
 			double idListaCompra,
 			String finalCompra) {
 		
+		this.idProduto = idProduto;
+		this.idListaCompra = idListaCompra;
+		this.finalCompra = finalCompra;
+		
 		Random random = new Random();
 		
 		mercado = "EPA";
@@ -25,7 +29,7 @@ public class ListaCompras extends Mercado{
 		nomeProduto[2] = "Bolinho Ana Maria";
 		quantidadeProduto[2] = 5;
 		idProduto = Mercado.produtos.idProduto;
-		idListaCompra = random.nextDouble() * 99999999 ; //irá gerar um número aleatório para o id da lista de compras
+		idListaCompra = random.nextDouble() * 99999999 ; //irÃ¡ gerar um nÃºmero aleatÃ³rio para o id da lista de compras
 		LocalDate dataCompra = LocalDate.now();
 		
 		finalCompra = mercado +
@@ -45,6 +49,10 @@ public class ListaCompras extends Mercado{
 			String idProduto,
 			double idListaCompra,
 			String finalCompra) {
+		
+		this.idProduto = idProduto;
+		this.idListaCompra = idListaCompra;
+		this.finalCompra = finalCompra;
 		
 		finalCompra = null;
 	}
