@@ -6,6 +6,9 @@ public class HistoricoCompras extends ListaCompras{
 	
 	protected String historicoDeCompras (String finalCompra) {
 		
-		return finalCompra;
+		ListaCompras listacompra = new ListaCompra();
+		
+		return listacompra.finalCompra;
+		
 	}
 }

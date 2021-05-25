@@ -10,7 +10,7 @@ public class ListaCompras extends Mercado{
 	protected double idListaCompra;
 	protected String finalCompra;
 	
-	public void finalizarCompra(String nomeProduo[],
+	public finalizarCompra(String nomeProduo[],
 			int quantidadeProduto[],
 			String mercado,
 			String idProduto,
@@ -40,6 +40,8 @@ public class ListaCompras extends Mercado{
 				idProduto +
 				idListaCompra+
 				dataCompra;
+		
+		return finalCompra;
 		
 	}
 	

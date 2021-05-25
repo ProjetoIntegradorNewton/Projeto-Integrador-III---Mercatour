@@ -16,7 +16,7 @@ public class Configurar extends Endereco{
 	protected void depositar(float saldo) {
 		this.saldo = saldo;
 		
-	System.out.println("Quanto vocÃª deseja depositar?");
+	System.out.println("Quanto você deseja depositar?");
 		float deposito = scanner.nextFloat();
 		
 	saldo = saldo + deposito;
@@ -26,7 +26,7 @@ public class Configurar extends Endereco{
 	protected void escolherFavoritos(String favoritos[]) {
 		this.favoritos = favoritos;
 		
-		System.out.println("Quais mercados vocÃª deseja adicionar como seus favoritos?");
+		System.out.println("Quais mercados você deseja adicionar como seus favoritos?");
 			favoritos[1] = scanner.nextLine();
 			favoritos[2] = scanner.nextLine();
 			favoritos[3] = scanner.nextLine();
@@ -36,23 +36,23 @@ public class Configurar extends Endereco{
 		//adiciona formas de pagamento desejada
 		this.formaDePagamento = pagamento; 
 		
-		formaPagamento.add("CartÃ£o de crÃ©dito 01");
-		formaPagamento.add("Vale refeiÃ§Ã£o");
-		formaPagamento.add("CartÃ£o de crÃ©dito 02");
+		formaPagamento.add("cartão de crédtio 01");
+		formaPagamento.add("Vale refeição");
+		formaPagamento.add("cartão de crédito 02");
 		
 	}
 	protected void removerFormaPagamento(String formaDePagamento) {
 		this.formaDePagamento = pagamento; 
 		
-		formaPagamento.remove(2);//remove cartÃ£o de crÃ©dito 02
+		formaPagamento.remove(2);//remove cartão de crédito 02
 	}
 	
-	protected void alterarEndereÃ§o(String enderecos[]) {
+	protected void alterarEndereço(String enderecos[]) {
 		this.enderecos[] = enderecos[];
 		
-		System.out.println("Qual endereÃ§o deseja alterar?");
+		System.out.println("Qual endereço deseja alterar?");
 			@SuppressWarnings("unused")
-			int endereco = scanner.nextInt(); //Qual Ã­ndice do endereÃ§o vai alterar, haja vista que pode haver mais de um.
+			int endereco = scanner.nextInt(); //Qual índice do endereço vai alterar, haja vista poder haver mais de um.
 			
 		System.out.println("Digite o novo logradouro?");
 			logradouro = scanner.nextLine();

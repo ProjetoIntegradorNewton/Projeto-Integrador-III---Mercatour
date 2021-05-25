@@ -104,7 +104,7 @@ public class Conta extends Endereco{
 	}
 	
 	public boolean validaCep(String cep) {
-		//Valida o cep junto Ã  API dos correios
+		//Valida o cep junto à API dos correios
 		this.cep = cep;
 		
 		return true;

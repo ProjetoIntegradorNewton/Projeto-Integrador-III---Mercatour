@@ -21,6 +21,8 @@ public class FinalizarCompra extends ListaCompras{
 	
 	public void idCompraGen(double idCompra) {
 		idCompra = random.nextDouble() * 99999999 ; //irá gerar um número aleatório para o id da compra
+		
+		return idCompra;
 
 	}
 	public String formaDePagamento(String formaPagamento) {
@@ -44,7 +46,7 @@ public class FinalizarCompra extends ListaCompras{
 		System.out.println("Qual item deseja excluir?");
 			int excluir = scanner.nextInt();
 		
-			excluir = excluir - 1;
+			excluir = excluir - 1; //Retira 1 do índice do item selecionado, no array começa com 0
 
 			produtos[excluir] = null;
 			

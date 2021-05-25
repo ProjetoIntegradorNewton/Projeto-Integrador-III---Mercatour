@@ -4,7 +4,7 @@ package mercatour;
 public class Mercado extends Conta{
 
 	String nomeMercado;
-	int avaliacao[];
+	int avaliacao;
 	static String produtos;
 	String logradouro;
 	String bairro;
@@ -38,18 +38,23 @@ public class Mercado extends Conta{
 				cep +", "+
 				pais;
 				
-		return enderecoMercado(nomeMercado, logradouro, bairro, numero, estado, pais, cep);
+		return enderecoCompletoMercado;
 	}
 	
 	public int avalicaoMercado(String nomeMercado, int avaliacao) {
 		//consultar banco de dados para avaliação do mercado
-		return avaliacao;
+		for (int i = 0; i < listaMercado.lenght; i++) {
+			return mercado.avaliacao;
+		}
+		
 	}
 	
 	public String[] Produtos(String produtos[]) {
 		//consultar banco de dados do mercado os produtos disponíveis e os respectivos id dos produtos
-
-		return produtos;
+		for (int i = 0; i < listaMercado.lenght; i++) {
+			return mercado.produtos;
+		}
+		
 	}
 	
 }

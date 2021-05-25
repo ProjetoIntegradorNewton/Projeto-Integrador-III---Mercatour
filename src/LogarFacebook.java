@@ -7,17 +7,16 @@ public class LogarFacebook extends Conta{
 	protected String senha;
 	
 	void validaLogin (String email, String senha) {
-		//mÃ©todo de validaÃ§Ã£o com o facebook, integraÃ§Ã£o com banco de dados
+		// método de validação com o facebook, integração com banco de dados
 		this.senha = senha;
 	}
 	
 	void esqueceuConta(String email , String telefone) {
-		//mÃ©todo de validaÃ§Ã£o com o facebook, integraÃ§Ã£o com banco de dados
+		// método de validação com o facebook, integração com banco de dados
 	}
 	
-	void criarConta(String email, String telefone, String senha) {
-		//integraÃ§Ã£o com facebook para criaÃ§Ã£o de conta
-		this.senha = senha;
+	void criarConta() {
+		//integração com o facebook para criação de conta
 	}
 	
 }

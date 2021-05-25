@@ -9,8 +9,10 @@ public class PesquisarProduto extends EncontrarMercado{
 	public String maisBarato;
 	public String prodMelhorAvaliado;
 	
+	Mercado mercado = new Mercado();
+	
 	public String maisBarato() {
-		for ( int i = 0; i < produtos.length(); i++) {
+		for ( int i = 0; i < mercado.length(); i++) {
 			if(nomeProduto[i].preco < nomeProduto[i+1].preco) {
 				maisBarato = nomeProduto[i];
 			}
