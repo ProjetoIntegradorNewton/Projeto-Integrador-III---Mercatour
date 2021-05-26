@@ -68,7 +68,7 @@ public class Conta extends Endereco{
 			String senha,
 			String cep,
 			String endereco,
-			String idUsuario) {
+			double idUsuario) {
 		
 		this.nome = nome;
 		this.email = email;
@@ -123,7 +123,7 @@ public class Conta extends Endereco{
 	
 	public String buscaCep(String logradouro, String estado) {
 		//consulta de cep no correios
-		this.cep = cep;
+
 		
 		return cep;
 	}

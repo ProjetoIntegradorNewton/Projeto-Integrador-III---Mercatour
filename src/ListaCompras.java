@@ -6,11 +6,11 @@ public class ListaCompras extends Mercado{
 	String[] nomeProduto;
 	int quantidadeProduto[];
 	String mercado;
-	protected String idProduto[];
+	protected String idProduto;
 	protected double idListaCompra;
 	protected String finalCompra;
 	
-	public finalizarCompra(String nomeProduo[],
+	public String finalizarCompra(String nomeProduo[],
 			int quantidadeProduto[],
 			String mercado,
 			String idProduto,
@@ -28,8 +28,8 @@ public class ListaCompras extends Mercado{
 		quantidadeProduto[1] = 1;
 		nomeProduto[2] = "Bolinho Ana Maria";
 		quantidadeProduto[2] = 5;
-		idProduto = Mercado.produtos.idProduto;
-		idListaCompra = random.nextDouble() * 99999999 ; //irÃ¡ gerar um nÃºmero aleatÃ³rio para o id da lista de compras
+		idProduto = Mercado.produtos.idProduto; //adicionar idProduto no cadastro de produtos no banco de dados
+		idListaCompra = random.nextDouble() * 99999999 ; //irá gerar um número aleatório para o id da lista de compras
 		LocalDate dataCompra = LocalDate.now();
 		
 		finalCompra = mercado +

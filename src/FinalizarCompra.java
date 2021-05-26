@@ -16,10 +16,12 @@ public class FinalizarCompra extends ListaCompras{
 	float total;
 	String formaPagamento;
 	double cupom;
-	double idCompra;
+	protected double idCompra;
 
 	
-	public void idCompraGen(double idCompra) {
+	protected double idCompraGen(double idCompra) {
+		this.idCompra = idCompra;
+		
 		idCompra = random.nextDouble() * 99999999 ; //irá gerar um número aleatório para o id da compra
 		
 		return idCompra;

@@ -43,18 +43,13 @@ public class Mercado extends Conta{
 	
 	public int avalicaoMercado(String nomeMercado, int avaliacao) {
 		//consultar banco de dados para avaliação do mercado
-		for (int i = 0; i < listaMercado.lenght; i++) {
-			return mercado.avaliacao;
-		}
+		return avaliacao;
 		
 	}
 	
 	public String[] Produtos(String produtos[]) {
 		//consultar banco de dados do mercado os produtos disponíveis e os respectivos id dos produtos
-		for (int i = 0; i < listaMercado.lenght; i++) {
-			return mercado.produtos;
-		}
-		
+		return produtos;
 	}
 	
 }

@@ -8,13 +8,13 @@ public class Acompanhar extends FinalizarCompra{
 	protected String dadosEntregador;
 	protected Date estimativaEntrega;
 	
-	dadosParceiro parceiro = new Conta();
+	Conta parceiro = new Conta();
 	
-	public String contatarEntregador(parceiro) {
+	public String contatarEntregador(String dadosEntregador) {
 		//integração com chamada do celular e envio de mensagem via aplicativos terceiros
-		this.dadosEntregador = parceiro;
+		this.dadosEntregador = dadosEntregador;
 		
-		return parceiro.nome, parceiro.telefone ;
+		return dadosEntregador ;
 	}
 	
 	void map() {
