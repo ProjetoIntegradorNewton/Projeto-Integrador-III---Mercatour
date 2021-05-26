@@ -7,6 +7,10 @@ public class EncontrarMercado extends Mercado{
 	
 	Mercado mercado = new Mercado();
 	
+	public String buscarMercado(String nomeMercado) {
+		return nomeMercado;
+	}
+	
 	public String maisProcurado(String nomeMercado){
 		//consulta mais procurado no banco de dados, counter de procura
 		return nomeMercado;
