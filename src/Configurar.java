@@ -32,23 +32,23 @@ public class Configurar extends Endereco{
 			favoritos[3] = scanner.nextLine();
 	}
 	
-	protected void adicionarFormaPagamento(String formaDePagamento) {
+	protected void adicionarFormaPagamento(String[] formaDePagamento) {
 		//adiciona formas de pagamento desejada
-		this.formaDePagamento = pagamento; 
+		this.formaDePagameto = formaDePagamento;
 		
 		formaPagamento.add("cartão de crédtio 01");
 		formaPagamento.add("Vale refeição");
 		formaPagamento.add("cartão de crédito 02");
 		
 	}
-	protected void removerFormaPagamento(String formaDePagamento) {
-		this.formaDePagamento = pagamento; 
+	protected void removerFormaPagamento(String[] formaDePagamento) {
+		this.formaDePagameto = formaDePagamento; 
 		
 		formaPagamento.remove(2);//remove cartão de crédito 02
 	}
 	
 	protected void alterarEndereço(String enderecos[]) {
-		this.enderecos[] = enderecos[];
+		this.enderecos = enderecos;
 		
 		System.out.println("Qual endereço deseja alterar?");
 			@SuppressWarnings("unused")
