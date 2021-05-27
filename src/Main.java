@@ -1,6 +1,5 @@
 package mercatour;
 
-
 public class Main {
 	
 	public static void main(String[] args) {
@@ -13,16 +12,16 @@ public class Main {
 		conta.cadastrar();
 		endereco.endereco();
 		
-		System.out.println("Seu nome é: " + conta.nome);
-		System.out.println("Seu E-mail é: " + conta.email);
-		System.out.println("Seu telefone é: " + conta.telefone);
+		System.out.println("Seu nome Ã©: " + conta.nome);
+		System.out.println("Seu E-mail Ã©: " + conta.email);
+		System.out.println("Seu telefone Ã©: " + conta.telefone);
 		System.out.println(
-				"Seu endereço é: " + endereco.logradouro +"\n" 
+				"Seu endereÃ§o Ã©: " + endereco.logradouro +"\n" 
 				+ "bairro: " + endereco.bairro +"\n"
-				+"número: " +endereco.numero+"\n"
+				+"nÃºmero: " +endereco.numero+"\n"
 				+"estado: "+ endereco.estado+"\n"
-				+"país: "+ endereco.pais);
-		System.out.println("Seu id de usuário é: " + conta.idUsuario);
+				+"paÃ­s: "+ endereco.pais);
+		System.out.println("Seu id de usuÃ¡rio Ã©: " + conta.idUsuario);
 	
 		
 		//TESTE DA CLASSE ENCONTRAR MERCADO
@@ -36,15 +35,15 @@ public class Main {
 		
 		Configurar configurar = new Configurar();
 		
-		//MÉTODO DEPÓSITO
+		//MÃ‰TODO DEPÃ“SITO
 		configurar.depositar(1000); //recebe o saldo atual
 		
-		//MÉTODO ESCOLHER FAVORITOS
+		//MÃ‰TODO ESCOLHER FAVORITOS
 		configurar.escolherFavoritos();
 		System.out.println(configurar.favoritos);
 		
 		configurar.adicionarFormaPagamento();
-		System.out.println("Suas formas de pagamento cadastradas são: " + configurar.formaPagamento);
+		System.out.println("Suas formas de pagamento cadastradas sÃ£o: " + configurar.formaPagamento);
 		
 		configurar.removerFormaPagamento();
 		
