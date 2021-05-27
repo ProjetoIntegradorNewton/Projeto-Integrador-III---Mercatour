@@ -4,7 +4,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 	
-		//TESTE DA CLASSE CADASTRAR
+		//@TESTE DA CLASSE CADASTRAR
 
 		Conta conta = new Conta();
 		Endereco endereco = new Endereco();
@@ -24,14 +24,14 @@ public class Main {
 		System.out.println("Seu id de usuário é: " + conta.idUsuario);
 	
 		
-		//TESTE DA CLASSE ENCONTRAR MERCADO
+		//@TESTE DA CLASSE ENCONTRAR MERCADO
 		
 		EncontrarMercado encontrarMercado = new EncontrarMercado();
 		
 		encontrarMercado.buscarMercado();
 		
 		
-		//TESTE DA CLASSE CONFIGURAR
+		//@TESTE DA CLASSE CONFIGURAR
 		
 		Configurar configurar = new Configurar();
 		
@@ -47,15 +47,12 @@ public class Main {
 		
 		configurar.removerFormaPagamento();
 		
-		//TESTE DA CLASSE FINALIZAR COMPRA
+		//@TESTE DA CLASSE FINALIZAR COMPRA
 		
 		FinalizarCompra finalizarCompra = new FinalizarCompra();
 		
 		finalizarCompra.adicionarProdutos();
 		
-		finalizarCompra.removerProdutos();
-		
-	
-	
+		finalizarCompra.removerProdutos();	
 	}
 }
