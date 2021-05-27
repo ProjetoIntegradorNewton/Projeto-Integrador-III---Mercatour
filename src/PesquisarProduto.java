@@ -24,7 +24,7 @@ public class PesquisarProduto extends EncontrarMercado{
 		return maisBarato;
 	}
 	public String prodMelhorAval() {
-		for (int i = 0; i < produtos.length(); i++) {
+		for (int i = 0; i < produtos.size(); i++) {
 			if (nomeProduto.avaliacao[i] > nomeProduto.avaliacao[i-1]) {
 				prodMelhorAvaliado = nomeProduto[i];
 			}//implementar avaliação do produto no cadastro do produto no banco de dados

@@ -27,32 +27,33 @@ public class FinalizarCompra extends ListaCompras{
 		return idCompra;
 
 	}
-	public String formaDePagamento(String formaPagamento) {
+	public String formaDePagamento() {
 		
 		System.out.println("Qual forma de pagamento deseja?");
 			formaPagamento = scanner.nextLine();
 		return formaPagamento;
 	}
-	public String[] adicionarProdutos(String[] produtos) {
+	
+	public void adicionarProdutos() {
+		System.out.println("Quais produtos deseja adicionar?");
+		produtos.add(scanner.nextLine());
+		produtos.add(scanner.nextLine());
+		produtos.add(scanner.nextLine());
+		produtos.add(scanner.nextLine());
 		
-		produtos[0] = "Alcool em gel";
-		produtos[1] = "Macarrão";
-		produtos[2] = "Feijão";
-		produtos[3] = "Coca cola 2L";
+		System.out.println("Seus produtos escolhidos são" + produtos);
 		
-		return produtos;
-
+	
+	}
+	public void removerProdutos() {
+		if(produtos.size() == 0) {
+			System.out.println("Não existem produtos selecionados");
+		}else {
+		System.out.println("Qual produto deseja remover? " + produtos);
+		produtos.remove(scanner.nextInt() - 1);//remove cartão de crédito 02
+		System.out.println("Seus produtos selecionados são: " + produtos);
 		
 	}
-	public String[] removerProdutos(String[] produtos) {
-		System.out.println("Qual item deseja excluir?");
-			int excluir = scanner.nextInt();
-		
-			excluir = excluir - 1; //Retira 1 do índice do item selecionado, no array começa com 0
-
-			produtos[excluir] = null;
-			
-		return produtos;
 	}
 	
 	public String selecionarEndereco(String endereco) {

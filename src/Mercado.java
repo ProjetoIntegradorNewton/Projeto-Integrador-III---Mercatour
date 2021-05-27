@@ -1,11 +1,10 @@
 package mercatour;
-
+import java.util.*;
 
 public class Mercado extends Conta{
 
 	String nomeMercado;
 	int avaliacao;
-	static String produtos;
 	String logradouro;
 	String bairro;
 	int numero;
@@ -13,6 +12,9 @@ public class Mercado extends Conta{
 	String pais;
 	String cep;
 	String enderecoCompletoMercado;
+	
+	protected double idProduto;
+	protected ArrayList<String> produtos = new ArrayList<String>();
 	
 	protected String enderecoMercado(String nomeMercado,
 			String logradouro, 
@@ -49,7 +51,18 @@ public class Mercado extends Conta{
 	
 	public String[] Produtos(String produtos[]) {
 		//consultar banco de dados do mercado os produtos disponíveis e os respectivos id dos produtos
+		
 		return produtos;
 	}
 	
+	public void setIdProduto() {
+		Random random = new Random();
+		for (int i = 0; i < produtos.size(); i++) {
+			idProduto = random.nextDouble() * 99999999;
+		}
+	}
+	
+	public double getIdProduto() {
+		return idProduto;
+	}
 }

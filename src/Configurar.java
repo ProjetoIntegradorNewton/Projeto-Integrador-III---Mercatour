@@ -3,49 +3,51 @@ import java.util.*;
 
 public class Configurar extends Endereco{
 
-	ArrayList<String> formaPagamento = new ArrayList<String>();
-	
-	protected float saldo;
-	protected String formaDePagameto[];
+	protected ArrayList<String> formaPagamento = new ArrayList<String>();
+	protected ArrayList<String> favoritos = new ArrayList<String>();
+	protected int saldo;
 	protected String enderecos[];
-	protected String favoritos[];
 
-	
 	Scanner scanner = new Scanner(System.in);
 	
-	protected void depositar(float saldo) {
+	public void depositar(int saldo) {
 		this.saldo = saldo;
-		
 	System.out.println("Quanto você deseja depositar?");
-		float deposito = scanner.nextFloat();
+		int deposito = scanner.nextInt();
 		
 	saldo = saldo + deposito;
+	System.out.println("Seu novo saldo é: " + saldo);
+	
+	}
+	
+	public void escolherFavoritos() {
+	
+		System.out.println("Quais mercados você deseja adicionar como seus favoritos?");
+			favoritos.add(scanner.nextLine());
+			favoritos.add(scanner.nextLine());
+			favoritos.add(scanner.nextLine());
 
 	}
 	
-	protected void escolherFavoritos(String favoritos[]) {
-		this.favoritos = favoritos;
-		
-		System.out.println("Quais mercados você deseja adicionar como seus favoritos?");
-			favoritos[1] = scanner.nextLine();
-			favoritos[2] = scanner.nextLine();
-			favoritos[3] = scanner.nextLine();
-	}
-	
-	protected void adicionarFormaPagamento(String[] formaDePagamento) {
+	protected void adicionarFormaPagamento() {
 		//adiciona formas de pagamento desejada
-		this.formaDePagameto = formaDePagamento;
+		System.out.println("Quais formas de pagamento você deseja adicionar?");
+		formaPagamento.add(scanner.nextLine());
+		formaPagamento.add(scanner.nextLine());
+		formaPagamento.add(scanner.nextLine());
 		
-		formaPagamento.add("cartão de crédtio 01");
-		formaPagamento.add("Vale refeição");
-		formaPagamento.add("cartão de crédito 02");
 		
 	}
-	protected void removerFormaPagamento(String[] formaDePagamento) {
-		this.formaDePagameto = formaDePagamento; 
+	protected void removerFormaPagamento() {
+		if(formaPagamento.size() == 0) {
+			System.out.println("Não existem formas de pagamento cadastradas");
+		}else {
+		System.out.println("Qual forma de pagamento deseja excluir? " + formaPagamento);
+		formaPagamento.remove(scanner.nextInt() - 1);//remove a forma de pagamento desejada na posição selecionada
+		System.out.println("Suas formas de pagamento cadastradas são: " + formaPagamento);
 		
-		formaPagamento.remove(2);//remove cartão de crédito 02
 	}
+}
 	
 	protected void alterarEndereço(String enderecos[]) {
 		this.enderecos = enderecos;
@@ -61,7 +63,7 @@ public class Configurar extends Endereco{
 			bairro = scanner.nextLine();
 			
 		System.out.println("Digite o novo numero?");
-			numero = scanner.nextInt();
+			numero = scanner.nextLine();
 			
 		System.out.println("Digite o novo estado?");
 			estado = scanner.nextLine();

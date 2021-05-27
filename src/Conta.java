@@ -3,8 +3,6 @@ import java.util.*;
 
 public class Conta extends Endereco{
 
-
-
 	public String nome;
 	protected String email;
 	protected String telefone;
@@ -19,21 +17,7 @@ public class Conta extends Endereco{
 	Scanner scanner = new Scanner(System.in);
 
 	
-	public void cadastrar(String nome,
-			String email,
-			String telefone,
-			String senha,
-			String cep,
-			String endereco,
-			double idUsuario) {
-		
-		this.nome = nome;
-		this.email = email;
-		this.telefone = telefone;
-		this.senha = senha;
-		this.cep = cep;
-		this.endereco = endereco;
-		this.idUsuario = idUsuario;
+	public void cadastrar() {
 		
 		Random random = new Random();
 		
@@ -49,14 +33,9 @@ public class Conta extends Endereco{
 		System.out.println("Digite sua senha:");
 			senha = scanner.nextLine();
 		
-		System.out.println("Digite sua senha novamento:");
+		System.out.println("Digite sua senha novamente:");
 			resenha = scanner.nextLine();
 			
-		System.out.println("Digite seu cep:");
-			cep = scanner.nextLine();
-			
-		System.out.println("Digite seu endereco:");
-			nome = scanner.nextLine();
 		
 		idUsuario = random.nextDouble() * 99999999 ;
 			
